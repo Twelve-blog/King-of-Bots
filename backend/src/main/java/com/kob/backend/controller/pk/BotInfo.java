@@ -26,7 +26,7 @@ public class BotInfo {
     public Map<String,String> getStrings(){
         Map<String,String> map = new HashMap<>();
         map.put("name","tigger");
-        map.put("name1","rubbit");
+        map.put("ratting","999");
         return map;
     }
 }
