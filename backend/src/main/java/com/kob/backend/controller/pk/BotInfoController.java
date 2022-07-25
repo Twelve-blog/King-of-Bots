@@ -10,7 +10,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/pk/")
-public class BotInfo {
+public class BotInfoController {
     @RequestMapping("getbotinfo/")
     public String getBotInfo(){
         return "Hhhh";
