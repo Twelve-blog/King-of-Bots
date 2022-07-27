@@ -40,7 +40,8 @@ public class UserController {
         }
         PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
         String encodedPassword = passwordEncoder.encode(password);
-        User user = new User(userId, username, encodedPassword);
+        String photo = "https://cdn.acwing.com/media/user/profile/photo/106777_lg_eb9fd71ee7.jpg";
+        User user = new User(userId, username, encodedPassword, photo);
         userMapper.insert(user);
         return "Add User Success";
     }

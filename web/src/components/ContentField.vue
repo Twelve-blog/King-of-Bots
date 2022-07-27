@@ -15,5 +15,9 @@
 <style scoped>
 div.content-feild{
     margin-top:20px;
+    /* margin-left: 40px;
+    margin-right: 40px; */
+    width: 80%;
+    margin: 20px auto ;
 }
 </style>
