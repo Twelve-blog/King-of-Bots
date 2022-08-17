@@ -34,7 +34,7 @@ public class AddServiceImpl implements AddService {
         Map<String, String> map = new HashMap<>();
 
         if(title == null || title.length() == 0) {
-            map.put("error_message", "标题不能为空");
+            map.put("error_message", "名称不能为空");
             return map;
         }
 
