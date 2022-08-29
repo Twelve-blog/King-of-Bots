@@ -65,7 +65,7 @@
                                     <td> {{bot.title}} </td>
                                     <td> {{bot.createtime}} </td>
                                     <td>
-                                        <button type="button" class="btn btn-secondary" style="margin-right:10px;" @click="update_bot(bot)" data-bs-toggle="modal" :data-bs-target="'#update-bot-modal'+bot.id">修改</button>
+                                        <button type="button" class="btn btn-secondary" style="margin-right:10px;" @click="updata_bot(bot)" data-bs-toggle="modal" :data-bs-target="'#update-bot-modal'+bot.id">修改</button>
                                         <button type="button" class="btn btn-danger" @click="remove_bot(bot)">删除</button>
 
                                         <!-- Modal -->

@@ -1,11 +1,10 @@
-package com.kob.backend.consumer.util;
+package com.kob.backend.consumer.utils;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 
@@ -14,14 +13,15 @@ import java.util.List;
 @NoArgsConstructor
 public class Player {
     private Integer id;
+    private Integer botId;
+    private String botCode;
     private Integer sx;
     private Integer sy;
     private List<Integer> steps;
 
     private boolean check_tail_increasing(int steps) {  // 检测当前回合蛇是否变长
         if (steps <= 10) return true;
-        if (steps % 3 == 1) return true;
-        return false;
+        return steps % 3 == 1;
     }
 
     public List<Cell> getCells() {

@@ -1,4 +1,4 @@
-package com.kob.backend.consumer.util;
+package com.kob.botrunningsystem.service.impl.utils;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Cell {
-    int x,y;
+public class Bot {
+    Integer userId;
+    String botCodes;
+    String input;
 }
